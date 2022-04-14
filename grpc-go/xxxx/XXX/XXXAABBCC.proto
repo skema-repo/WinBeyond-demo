@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package xxxx.XXX;
+
+option go_package="github.com/skema-repo/WinBeyond-demo/grpc-go/xxxx/XXX";
+
+
+service XXXAABBCC {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
